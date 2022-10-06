@@ -10,6 +10,7 @@ namespace SpaDay.Controllers
 {
     public class SpaController : Controller
     {
+        public static readonly string[] nailColors = { "CadetBlue", "DarkCyan", "DarkSeaGreen", "LightSlateGrey", "LightCoral", "LemonChiffon" };
         public bool CheckSkinType(string skinType, string facialType)
         {
 
@@ -59,6 +60,7 @@ namespace SpaDay.Controllers
                 }
             }
             ViewBag.appropriateFacials = appropriateFacials;
+            ViewBag.nailColors = nailColors;
             return View();
         }
 

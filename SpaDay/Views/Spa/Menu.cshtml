@@ -34,5 +34,9 @@
     else {
         <p>Hmm...Something seems to have gone wrong.</p>
     }
-    
+    <div id="nail-polish-colors">
+        @foreach (string color in ViewBag.nailColors) {
+            <div class="color-square" style="background-color:@color"></div>
+        }
+    </div>
 </div>

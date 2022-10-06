@@ -69,3 +69,10 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+.color-square{
+    display: inline-block;
+    height: 75px;
+    width:75px;
+    border-radius: 5px;
+}
